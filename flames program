@@ -1,0 +1,27 @@
+name1 = input("Enter first name: ").lower()
+name2 = input("Enter second name: ").lower()
+l1 = list(name1)
+l2 = list(name2)
+for i in name1:
+    if i in l2:
+        l1.remove(i)
+        l2.remove(i)
+count = len(l1) + len(l2)
+flames = ["F","L","A","M","E","S"]
+index = 0
+while len(flames) > 1:
+    index = (index + count - 1) % len(flames)
+    flames.pop(index)
+result = flames[0]
+if result == "F":
+    print("Friends")
+elif result == "L":
+    print("Love")
+elif result == "A":
+    print("Attraction")
+elif result == "M":
+    print("Marriage")
+elif result == "E":
+    print("Enemies")
+else:
+    print("Sister")
