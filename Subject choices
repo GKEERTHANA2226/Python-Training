@@ -1,0 +1,23 @@
+maths = ["kinnu","basheer","gayatri","nagasai","abhi"]
+political = ["keerthi","kinnu","abhi","navya"]
+social = ["varshitha","basheer","eesitha","kinnu"]
+m = set(maths)
+p = set(political)
+s = set(social)
+print(f"one subject : {m|p|s}")
+print(f"2 subjects : {m&p|m&s|p&s}")
+print(f"all subjects: {m&p&s}")
+# if output should be in list
+one = list(m|p|s)
+two = list(m&p|m&s|p&s)
+three = list(m&p&s)
+print(one)
+print(two)
+print(three)
+# uncommon pair
+a = m&p
+b = m&s
+c = p&s
+res = (a|b|c)-(m&p&s)
+print(res)
+
