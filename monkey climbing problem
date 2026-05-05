@@ -1,0 +1,13 @@
+def monkey_climb(x, y, z):
+    minutes = 0
+    height = 0
+    while height < x:
+        height += y
+        minutes += 1
+        if height >= x:
+            return minutes
+        height -= z
+        minutes += 1
+
+x1, y1, z1 = 30, 10, 5
+print("Test Case 1 Output:", monkey_climb(x1, y1, z1), "minutes")
