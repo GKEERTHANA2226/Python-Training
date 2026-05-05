@@ -1,0 +1,16 @@
+#Constructor with list
+class circle:
+  def __init__ (self):
+    x = int(input())
+    self.r = x
+  def display(self):
+    print("Radius is ",3.14*self.r**2)
+
+a = int(input())
+l = []
+for i in range(a):
+  c=circle()
+  l.append(c)
+  c.display()
+  print("_______________")
+
