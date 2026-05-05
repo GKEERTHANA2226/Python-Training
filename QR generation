@@ -1,0 +1,8 @@
+import qrcode
+qr = qrcode.QRCode()
+a = "MR. OCD"
+qr.add_data(a)
+qr.make(fit = True)
+res = qr.make_image(fill_color = "pink",back_color = "white")
+res.save("KINNU.png")
+print("Created QR")
