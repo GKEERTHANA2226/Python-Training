@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0,5,11)
+y = x**2
+
+fig, axes = plt.subplots(figsize=(10,5))
+# figsize is a  tuple of width and height of the figure in inches
+
+axes.plot(x,y,'b')
+axes.set_xlabel('x')
+axes.set_ylabel('y')
+axes.set_title('title')
+fig
+plt.tight_layout()
