@@ -1,0 +1,10 @@
+try:
+  x = 10/0
+except:
+  print("Done")
+a = int(input())
+b = int(input())
+try:
+  print(a/b)
+except ZeroDivisionError:
+  print("you can't divide by zero")
