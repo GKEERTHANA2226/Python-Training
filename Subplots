@@ -1,0 +1,19 @@
+fig, ax = plt.subplots(figsize=(12,6))
+ax.plot(x,x+1,color="red",linewidth=0.25)
+ax.plot(x,x+2,color="red",linewidth=0.50)
+ax.plot(x,x+3,color="red",linewidth=1.00)
+ax.plot(x,x+4,color="red",linewidth=2.00)
+# line style options
+ax.plot(x,x+5,color="red",lw=3,ls='-')
+ax.plot(x,x+1,color="red",lw=3,ls='-.')
+ax.plot(x,x+1,color="red",lw=3,ls=':')
+# custom dashes
+line, = ax.plot(x,x+8,color="black",lw=1.50)
+line.set_dashes([5,10,15,10])
+# possible markers--+,o,*,s,(,),.,1,2,3,4
+ax.plot(x,x+9,color="black",lw=3,ls='-', marker='+')
+ax.plot(x,x+10,color="black",lw=3,ls='-', marker='o')
+ax.plot(x,x+11,color="black",lw=3,ls='-', marker='s')
+ax.plot(x,x+12,color="black",lw=3,ls='-', marker='1')
+# marker size and color
+ax.plot(x,x+13,color="purple",lw=3,ls='-', marker='s',markersize=8,markerfacecolor='yellow',markeredgewidth=3,markeredgecolor='green');
