@@ -1,0 +1,17 @@
+size = input("Enter the size of pizza(S/M/L)?:")
+bill = 0
+if size == 'S' or size == 's':
+  bill += 100
+  print("price is 100" )
+elif size == 'M' or size == 'm':
+  bill += 150
+  print("price is 150")
+else:
+  bill += 200
+  print("price is 200")
+add_cheese = input("Do you want cheese(Y/N)?:")
+if add_cheese == 'Y' or add_cheese == 'y':
+  bill += 10
+else:
+  bill += 0
+print(f"your final bill is {bill}")
