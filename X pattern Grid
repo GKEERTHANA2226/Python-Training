@@ -1,0 +1,15 @@
+class Solution:
+    def generatexPattern(self, n: int):
+
+        result = []
+        for row in range(n):
+            current_row = []
+            for col in range(n):
+                if row == col or row + col == n - 1:
+                    current_row.append(1)
+                else:
+                    current_row.append(0)
+
+            result.append(current_row)
+
+        return result
