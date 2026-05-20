@@ -1,0 +1,17 @@
+from typing import List
+
+class Solution:
+    def generateSnapshot(self, n: int) -> List[str]:
+        # Write your solution here
+        res = []
+        for i in range(n,0,-1):
+          num = str(i)*(2*i-1)
+          space = " "*(n-i)
+          row = space + num + space
+          res.append(row)
+        for i in range(2,n+1):
+            num = str(i)*(2*i-1)
+            space = " "*(n-i)
+            row = space + num + space
+            res.append(row)
+        return res
