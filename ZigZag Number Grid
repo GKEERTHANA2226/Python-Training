@@ -1,0 +1,15 @@
+class Solution:
+    def printZigzag(self, n):
+        # TODO: return a 2D list
+        res = []
+        num = 1
+        for row in range(n):
+          current_row = []
+          for col in range(n):
+            current_row.append(num)
+            num += 1
+          if (row + 1) % 2 == 0:
+            current_row.reverse()
+          res.append(current_row)
+
+        return res
