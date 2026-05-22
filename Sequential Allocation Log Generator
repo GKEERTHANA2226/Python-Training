@@ -1,0 +1,14 @@
+from typing import List
+
+class Solution:
+    def generateLog(self, n: int) -> List[str]:
+        # Write your solution here
+        res = []
+        num = 1
+        for row in range(1,n+1):
+          current_row = []
+          for col in range(row):
+            current_row.append(str(num))
+            num += 1
+          res.append(" ".join(current_row))
+        return res
