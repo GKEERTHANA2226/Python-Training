@@ -1,0 +1,16 @@
+class Solution:
+    def buildPattern(self, n):
+        # TODO: return List[List[str]]
+        res = []
+        for row in range(n):
+          current_row = []
+          for col in range(n):
+            if row == col:
+              current_row.append("X")
+            elif (row + col) % 2 == 0:
+              current_row.append("O")
+            else:
+              current_row.append("_")
+          res.append(current_row)
+
+        return res
