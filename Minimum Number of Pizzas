@@ -1,0 +1,10 @@
+def get_gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+t = int(input())
+for _ in range(t):
+    N, K = map(int, input().split())
+
+    print(N // get_gcd(N, K))
