@@ -1,0 +1,10 @@
+class Solution:
+	def reverseDigits(self, n):
+		res = 0
+		while n > 0:
+		    ans = n % 10
+		    res = res * 10 + ans
+		    n = n // 10
+		return res
+		    
+		
