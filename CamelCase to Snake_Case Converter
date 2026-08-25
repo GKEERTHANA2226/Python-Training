@@ -1,0 +1,12 @@
+t = int(input())
+for _ in range(t):
+  s = input()
+  snake_case = ""
+  snake_case = s[0].lower()
+  for i in range(1, len(s)):
+    if s[i].isupper():
+      snake_case = "_" + s[i].lower()
+    else:
+      snake_case += s[i].lower()
+  print(snake_case)
+  
