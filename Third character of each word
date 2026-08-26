@@ -1,0 +1,14 @@
+def main():
+    line = input()
+    words = line.split()
+    result = []
+    
+    # ===== Write Your Logic Here =====
+    for word in words:
+        if len(word) >= 3:
+            result.append(word[2])
+            
+    print(",".join(result))
+
+if __name__ == "__main__":
+    main()
