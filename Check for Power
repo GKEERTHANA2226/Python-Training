@@ -1,0 +1,8 @@
+class Solution:
+    def isPower(self, x, y):
+        if x == 1:
+            return y == 1
+        temp = 1
+        while temp < y:
+            temp *= x
+        return temp == y
