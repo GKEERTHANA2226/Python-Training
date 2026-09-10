@@ -1,0 +1,11 @@
+X = int(input())
+N = int(input())
+total = 0
+power = 2
+sign = 1
+for _ in range(N):
+  term = X**power
+  total += sign * term
+  sign *= -1
+  power += 2
+print(total)
